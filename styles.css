@@ -89,6 +89,7 @@ body {
     width: 100%;
 }
 
+
 /* Hero Section */
 .hero {
     min-height: 100vh;
@@ -128,6 +129,26 @@ body {
 
 .profile-img:hover {
     transform: scale(1.05);
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.8;
+    filter: invert(100%);
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+    opacity: 1;
 }
 
 .hero-text h1 {
@@ -502,14 +523,6 @@ section {
 .form-group textarea:focus {
     outline: none;
     border-color: #3498DB;
-}
-
-/* Footer */
-.footer {
-    background-color: #2C3E50;
-    color: white;
-    text-align: center;
-    padding: 2rem 0;
 }
 
 /* Responsive Design */
